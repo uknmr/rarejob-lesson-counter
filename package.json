@@ -1,0 +1,9 @@
+{
+  "name": "rarejob-lesson-count",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "crx": "^3.2.1"
+  }
+}

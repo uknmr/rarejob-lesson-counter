@@ -1,0 +1,22 @@
+{
+  "name": "RareJob Lesson Counter",
+  "version": "1.0",
+  "description": "レアジョブの受講率を確認するための Chrome 拡張です。",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.rarejob.com/mypage/*",
+        "https://www.rarejob.com/reservation/*",
+        "https://www.rarejob.com/lesson/*",
+        "https://www.rarejob.com/teacher_detail/*"
+      ],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "manifest_version": 2
+}
